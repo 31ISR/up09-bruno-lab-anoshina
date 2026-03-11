@@ -1,0 +1,26 @@
+meta {
+  name: Ставка
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{base_url}}/api/items/:id/bids
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 1766661809479
+}
+
+body:json {
+  {
+    "amount": 85000
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

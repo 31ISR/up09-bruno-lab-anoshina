@@ -1,0 +1,20 @@
+meta {
+  name: del
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{base_url}}/api/items/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 1773204460240
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
